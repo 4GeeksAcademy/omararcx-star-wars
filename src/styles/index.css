@@ -1,3 +1,20 @@
-/* 
-    General Styles
-*/
+.my-carrousel {
+    display: flex;
+   overflow: scroll;
+   margin: 20px;
+    
+}
+
+.my-card {
+    width: 250 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.my-img {
+    width: 300px;
+}
+
+.my-img-detail {
+    width: 450px;
+}

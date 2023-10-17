@@ -78,6 +78,20 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 				}
 
+			},
+			deleteFavorite: (itemToDelete) => {
+				let store = getStore()
+				let exists = store.favorites.some((item) => item._id == itemToDelete._id)
+				if (exists) {
+					let newArr = store.favorites.filter((item) => item._id != itemToDelete._id)
+
+					setStore({
+						favorites: newArr
+					})
+				} else {
+
+				}
+				
 			}
 		}
 	}

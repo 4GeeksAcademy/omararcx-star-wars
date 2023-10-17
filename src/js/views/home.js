@@ -60,7 +60,7 @@ export const Home = () => {
 					})}
 				</div>
 				<div className="container">
-					<h2>Planets</h2>
+					<h2>Vehicles</h2>
 					<div className="my-carrousel">
 						{store.vehicles.map((item) => {
 							return (
@@ -73,7 +73,7 @@ export const Home = () => {
 										<p className="card-text">Model : {item.properties.model}</p>
 										<div className="d-flex justify-content-between">
 											<Link to={`/vehicles/${item._id}`}>
-												<button href="#" className="btn btn-primary">Learn More</button>
+												<button href="#" className="btn btn-light">Learn More</button>
 											</Link>
 											<button onClick={() => actions.addFavorite(item)} className="btn bg-warning"><i className="fa-solid fa-star"></i></button>
 										</div>
